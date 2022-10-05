@@ -4,30 +4,40 @@
 
 This application will accept file in text format, allowing you to capture gaming results and it will provide you with the winners of the league.
 
+````
 python3 main.py filename.txt
+````
 
 or
 
+````
 python3 main.py
+````
 
 ### Docker container is also available:
 
 Within root folder, building the docker image as below
 
+````
 docker built -t testingChallenge:latest .
 
 docker run -it testingChallenge:latest
+````
 
 ### Testing application
 
 After installing pytest, or requirements.txt the tests can be run with:
 
+````
 python3 -m pytest
+````
 
 or with docker within the tests folder:
 
+````
 docker built -t testingChallenge_tests:latest .
 docker run -it testingChallenge_tests:latest
+````
 
 With tests folder, building and running the dockerfile will run unit tests for the application
 
